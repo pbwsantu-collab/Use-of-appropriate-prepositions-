@@ -1,0 +1,286 @@
+:root{
+    --paper:#f2eee2;
+    --paper-2:#e9e3d2;
+    --ink:#23324a;
+    --ink-soft:#4b5568;
+    --rule:#c9beA0;
+    --teal:#1f6f6b;
+    --teal-deep:#154e4b;
+    --amber:#b5731b;
+    --amber-soft:#e7c98f;
+    --card:#fbf9f2;
+    --danger:#a4342a;
+    --good:#2f6f3e;
+    --focus:#154e4b;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    font-family:Georgia,"Times New Roman",serif;
+    background:var(--paper);
+    color:var(--ink);
+    line-height:1.55;
+    font-size:17px;
+  }
+  .masthead{
+    background:linear-gradient(180deg,var(--paper-2),var(--paper));
+    border-bottom:2px solid var(--rule);
+    padding:1.4rem 1.2rem 1rem;
+    text-align:center;
+  }
+  .masthead h1{
+    margin:0 0 .35rem;
+    font-size:1.65rem;
+    letter-spacing:.02em;
+    color:var(--teal-deep);
+  }
+  .masthead p{margin:0;color:var(--ink-soft);font-size:.95rem}
+  .tab-mark{display:inline-block;vertical-align:middle;margin-right:.35rem}
+  .tab-mark span{
+    display:inline-block;width:7px;height:7px;border-radius:50%;
+    background:var(--amber);margin:0 1px;
+  }
+  nav.tabs{
+    display:flex;flex-wrap:wrap;gap:.25rem;
+    background:var(--paper-2);
+    border-bottom:2px solid var(--teal);
+    padding:.4rem .6rem 0;
+    position:sticky;top:0;z-index:10;
+  }
+  nav.tabs button{
+    font:inherit;font-size:.9rem;
+    background:transparent;border:none;
+    padding:.55rem .9rem .5rem;
+    cursor:pointer;color:var(--ink-soft);
+    border-bottom:3px solid transparent;
+    margin-bottom:-2px;
+  }
+  nav.tabs button.active{
+    color:var(--teal-deep);
+    border-bottom-color:var(--teal);
+    font-weight:600;
+  }
+  main{max-width:820px;margin:0 auto;padding:1.4rem 1.1rem 3rem}
+  .panel{display:none}
+  .panel.active{display:block}
+  .section-title{
+    font-size:1.15rem;color:var(--teal-deep);
+    border-bottom:1.5px solid var(--rule);
+    padding-bottom:.25rem;margin:1.4rem 0 .7rem;
+  }
+  .lede{font-size:1.05rem;color:var(--ink-soft)}
+  .prep-tag{
+    display:inline-block;
+    background:var(--amber-soft);
+    color:var(--amber);
+    font-weight:600;
+    padding:.05rem .35rem;
+    border-radius:4px;
+    font-size:.9em;
+  }
+  table.pattern{
+    width:100%;border-collapse:collapse;
+    font-size:.92rem;margin:.6rem 0 1rem;
+  }
+  table.pattern th,table.pattern td{
+    border:1px solid var(--rule);
+    padding:.5rem .6rem;text-align:left;vertical-align:top;
+  }
+  table.pattern th{background:var(--paper-2);color:var(--teal-deep)}
+  ul,ol{padding-left:1.3rem}
+  li{margin:.35rem 0}
+  .toolbar{
+    display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;
+    margin:.6rem 0 1rem;
+  }
+  .btn{
+    font:inherit;font-size:.9rem;
+    background:var(--teal);color:#fff;
+    border:none;border-radius:6px;
+    padding:.45rem .9rem;cursor:pointer;
+  }
+  .btn:hover{background:var(--teal-deep)}
+  .btn.secondary{
+    background:var(--card);color:var(--ink);
+    border:1px solid var(--rule);
+  }
+  .btn.secondary:hover{border-color:var(--teal);color:var(--teal-deep)}
+  .count-note{font-size:.88rem;color:var(--ink-soft)}
+  input[type=search],input[type=number],select{
+    font:inherit;font-size:.9rem;
+    padding:.4rem .55rem;
+    border:1px solid var(--rule);
+    border-radius:5px;background:var(--card);
+  }
+  input[type=search]{flex:1;min-width:160px}
+  .letter-jump{
+    display:flex;flex-wrap:wrap;gap:.25rem;
+    margin:.5rem 0 1rem;
+  }
+  .letter-jump button{
+    font:inherit;font-size:.8rem;
+    width:1.9rem;height:1.9rem;
+    border:1px solid var(--rule);background:var(--card);
+    border-radius:4px;cursor:pointer;color:var(--ink);
+  }
+  .letter-jump button:hover{background:var(--teal);color:#fff;border-color:var(--teal)}
+  .letter-heading{
+    font-size:1.1rem;font-weight:700;color:var(--teal-deep);
+    margin:1.2rem 0 .4rem;padding-top:.4rem;
+    border-top:1px dashed var(--rule);
+  }
+  .card{
+    background:var(--card);
+    border:1px solid var(--rule);
+    border-radius:8px;
+    padding:.7rem .9rem;margin:.45rem 0;
+  }
+  .card h3{margin:0 0 .25rem;font-size:1.05rem}
+  .gloss{font-size:.88rem;color:var(--ink-soft);font-style:italic}
+  .ex{margin:.3rem 0 0;font-size:.95rem}
+  .practice-card{
+    background:var(--card);
+    border:1.5px solid var(--rule);
+    border-radius:10px;
+    padding:1.2rem 1.1rem;min-height:120px;
+  }
+  .practice-card .q{font-size:1.1rem;margin-bottom:.8rem}
+  .practice-card input{
+    font:inherit;font-size:1.05rem;
+    padding:.4rem .6rem;width:100%;max-width:220px;
+    border:2px solid var(--rule);border-radius:6px;
+  }
+  .practice-card input:focus{outline:none;border-color:var(--focus)}
+  .feedback{margin-top:.7rem;font-weight:600}
+  .feedback.ok{color:var(--good)}
+  .feedback.bad{color:var(--danger)}
+  .qb-list{padding-left:1.4rem}
+  .qb-list li{margin:.7rem 0}
+  .print-title{display:none}
+  footer.note{
+    max-width:820px;margin:0 auto;
+    padding:1rem 1.1rem 2rem;
+    font-size:.85rem;color:var(--ink-soft);
+    border-top:1px solid var(--rule);
+  }
+  @media print{
+    nav.tabs,.toolbar.no-print,.lang-toggle,.no-print{display:none!important}
+    .print-title{display:block;font-size:1.3rem;margin-bottom:1rem}
+    body{background:#fff;font-size:14px}
+    .panel{display:block!important}
+    #panel-concepts,#panel-dictionary,#panel-practice{display:none!important}
+  }
+
+/* ========== Bilingual additions ========== */
+.lang-toggle {
+  display: flex;
+  gap: 0.35rem;
+  justify-content: flex-end;
+  margin: 0.4rem 0 0.6rem;
+  flex-wrap: wrap;
+}
+.lang-toggle button {
+  font: inherit;
+  font-size: 0.82rem;
+  padding: 0.28rem 0.7rem;
+  border: 1px solid var(--rule);
+  background: var(--card);
+  color: var(--ink);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background .15s, color .15s, border-color .15s;
+}
+.lang-toggle button.active {
+  background: var(--teal);
+  color: #fff;
+  border-color: var(--teal-deep);
+}
+.lang-toggle button:hover:not(.active) {
+  border-color: var(--teal);
+  color: var(--teal-deep);
+}
+
+/* Bengali text styling */
+.bn {
+  font-family: "Noto Sans Bengali", "Hind Siliguri", "Kalpurush", "SolaimanLipi", system-ui, sans-serif;
+  line-height: 1.55;
+}
+.bn-block {
+  display: none;
+  margin-top: 0.35rem;
+  color: var(--ink-soft);
+  font-size: 0.95em;
+}
+html.lang-bn .bn-block,
+html.lang-mixed .bn-block {
+  display: block;
+}
+html.lang-bn .en-only {
+  display: none;
+}
+html.lang-en .bn-only {
+  display: none;
+}
+
+/* Word list bilingual gloss */
+.entry-gloss-bn {
+  display: none;
+  font-size: 0.88em;
+  color: var(--teal-deep);
+  margin-top: 0.15rem;
+}
+html.lang-bn .entry-gloss-bn,
+html.lang-mixed .entry-gloss-bn {
+  display: block;
+}
+html.lang-bn .entry-gloss-en {
+  display: none;
+}
+
+/* Concepts bilingual paragraphs */
+.concepts-bn {
+  display: none;
+}
+html.lang-bn .concepts-en { display: none; }
+html.lang-bn .concepts-bn { display: block; }
+html.lang-mixed .concepts-bn { display: block; margin-top: 0.6rem; padding-top: 0.5rem; border-top: 1px dashed var(--rule); }
+
+/* Header bilingual */
+.masthead .bn-title {
+  display: none;
+  font-size: 0.95em;
+  color: var(--ink-soft);
+  margin-top: 0.15rem;
+}
+html.lang-bn .masthead h1 .en-title { display: none; }
+html.lang-bn .masthead .bn-title { display: block; }
+html.lang-mixed .masthead .bn-title { display: block; }
+
+.masthead .bn-sub {
+  display: none;
+  font-size: 0.9em;
+}
+html.lang-bn .masthead > p.en-sub { display: none; }
+html.lang-bn .masthead .bn-sub { display: block; }
+html.lang-mixed .masthead .bn-sub { display: block; }
+
+/* Tab labels bilingual via data attributes handled in JS or CSS content */
+nav.tabs button .bn-label {
+  display: none;
+  font-size: 0.85em;
+}
+html.lang-bn nav.tabs button .en-label { display: none; }
+html.lang-bn nav.tabs button .bn-label { display: inline; }
+html.lang-mixed nav.tabs button .bn-label {
+  display: inline;
+  opacity: 0.85;
+  margin-left: 0.25rem;
+  font-size: 0.78em;
+}
+
+footer .bn-note {
+  display: none;
+}
+html.lang-bn footer .en-note { display: none; }
+html.lang-bn footer .bn-note { display: block; }
+html.lang-mixed footer .bn-note { display: block; margin-top: 0.4rem; }
