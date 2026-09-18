@@ -8,7 +8,7 @@ Bilingual (English + বাংলা) study, teaching & practice companion for *
 - Concepts with full Bengali translation
 - Language toggle: English / বাংলা / Mixed
 - Browsable Word List (~870 entries)
-- Practice drills
+- Practice drills (type / multiple-choice)
 - Question Bank builder (printable worksheets)
 - Offline PWA support
 
@@ -17,3 +17,5 @@ Bilingual (English + বাংলা) study, teaching & practice companion for *
 - `style.css` – styles + language modes
 - `script.js` – data + logic
 - `manifest.json` + `sw.js` – Progressive Web App
+
+Updated: 2026-09-18
