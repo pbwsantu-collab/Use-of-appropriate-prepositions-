@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Appropriate Prepositions — Study &amp; Practice | উপযুক্ত Prepositions</title>
+  <title>Appropriate Prepositions — Study & Practice | উপযুক্ত Prepositions</title>
   <meta name="description" content="Bilingual (English + বাংলা) study companion for Appropriate Prepositions — concepts, word list, practice drills and question-bank builder.">
   <meta name="theme-color" content="#1f6f6b">
   <link rel="manifest" href="manifest.json">
@@ -18,7 +18,7 @@
     <span class="en-title">Appropriate Prepositions</span>
     <span class="bn-title bn">উপযুক্ত Prepositions</span>
   </h1>
-  <p class="en-sub">A study, teaching &amp; practice companion — concepts, a browsable word-list, drills, and a question-bank builder.</p>
+  <p class="en-sub">A study, teaching & practice companion — concepts, a browsable word-list, drills, and a question-bank builder.</p>
   <p class="bn-sub bn">একটি অধ্যয়ন, শিক্ষা ও অনুশীলনের সহায়ক — ধারণা, শব্দতালিকা, ড্রিল এবং প্রশ্নব্যাংক নির্মাতা।</p>
 
   <div class="lang-toggle" id="lang-toggle" aria-label="Language">
@@ -176,24 +176,33 @@
     <span class="bn-only bn">অনুশীলন</span>
   </h2>
   <div class="toolbar">
-    <button class="btn secondary" id="practice-reset">
+    <select id="practice-mode">
+      <option value="type">Type the preposition</option>
+      <option value="mcq">Multiple choice</option>
+    </select>
+    <button class="btn secondary" id="practice-restart">
       <span class="en-only">Reset score</span>
       <span class="bn-only bn">স্কোর রিসেট</span>
     </button>
-    <span class="count-note" id="practice-score">Score: 0 / 0</span>
+  </div>
+  <div class="score-row">
+    <span id="practice-score">Score: 0 / 0</span>
+    <span id="practice-letter" class="count-note"></span>
   </div>
   <div class="practice-card" id="practice-card">
-    <!-- filled by JS -->
-  </div>
-  <div class="toolbar">
-    <button class="btn" id="practice-check">
-      <span class="en-only">Check</span>
-      <span class="bn-only bn">যাচাই</span>
-    </button>
-    <button class="btn secondary" id="practice-next">
-      <span class="en-only">Next question →</span>
-      <span class="bn-only bn">পরের প্রশ্ন →</span>
-    </button>
+    <div class="practice-q" id="practice-q"></div>
+    <div id="practice-answer-area"></div>
+    <div class="feedback" id="practice-feedback"></div>
+    <div class="toolbar" style="margin-top:.9rem;">
+      <button class="btn" id="practice-check">
+        <span class="en-only">Check</span>
+        <span class="bn-only bn">যাচাই</span>
+      </button>
+      <button class="btn secondary" id="practice-next">
+        <span class="en-only">Next question →</span>
+        <span class="bn-only bn">পরের প্রশ্ন →</span>
+      </button>
+    </div>
   </div>
 </section>
 
